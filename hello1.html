@@ -2,97 +2,112 @@
 <html>
     <head>
       <style>
-        section{
-          background-color:blue;
-        }
-        #first{
-          font-size:50px;
-          color:black;
-          background-color:blue;
-          text-align:center;
-        }
-        #second{
-          font-size:35px;
-          color:red;
-          background-color:white;
-          text-align:center;
-        }
-        #first:hover{
-          background-color:#DEECEB;
-        }
-        #first:hover{
-          background-color:blue;
-        }
-        .blinking{
-        animation:blinkingText 2s infinite;
-        }
-        @keyframes blinkingText{
-        0%{     color: #000;    }
-        ​49%{    color: transparent; }
-        ​50%{    color: transparent; }
-        ​99%{    color:transparent;  }
-        ​100%{   color: #000;    }
-        }
-        #fourth{
-          margin:50px;
-          position:absolute; left:100px; top:2px;
-        }
-        #txtbox1,#txtbox3,#txtbox4 {
-          font-size: 16pt;
-          height: 32px;
-          width : 300px;
-          margin-left:700px;
-        }
+        body{
+  background-color:#94A090
+}
+section{
+  background-color:blue;
+}
+#first{
+  font-size:50px;
+  color:black;
+  background-color:blue;
+  text-align:center;
+  font-size: 2em font-weight: bolder
+}
+#second{
+  font-size:35px;
+  color:red;
+  background-color:#C4CFC0;
+  text-align:center;
+}
+#first:hover{
+  background-color:#DEECEB;
+}
+#first:hover{
+  background-color:blue;
+}
+.blinking{
+animation:blinkingText 2s infinite;
+}
+@keyframes blinkingText{
+0%{     color: #000;    }
+​49%{    color: transparent; }
+​50%{    color: transparent; }
+​99%{    color:transparent;  }
+​100%{   color: #000;    }
+}
+#fourth{
+  margin:50px;
+  position:absolute; left:100px; top:2px;
+}
+#txtbox1,#txtbox3,#txtbox4 {
+  font-size: 16pt;
+  height: 32px;
+  width : 300px;
+  margin-left:700px;
+}
+#txt{
+  font-size:25px;
+  color:black;
+}
+#txtbox1{
+  margin-top:30px;
+}
+  #txtbox2{
+    font-size: 18pt;
+    height: 32px;
+    width : 300px;
+    margin-left:10px;
+  }
+#create{
+  margin-left:700px;
+  margin-top:18px;
+  font-size:40px;
+}
+#mybutton:hover{
+  color:red;
+  background-color:yellow;
+  font-size: 46px;
+  padding: 4px;
+  font-family:Bodoni;
+}
+#mybutton{
+  background-color:#50A232;
+  font-size:30px;
+  padding:1%;
+  font-family:Arial;
+}
+#list1{
+  width:40px;
+  margin-top:20px;
+}
+#list3{
+  width:50px;
+}
+#txt,#list1,#list2,#list3,#mybutton,#button1,#button2,#form{
+  margin-left:700px;
+}
 
-          #txtbox2{
-            font-size: 18pt;
-            height: 32px;
-            width : 300px;
-            margin-left:10px;
-          }
-        #create{
-          margin-left:700px;
-          font-size:40px;
-        }
-        #mybutton:hover{
-          background-color:#69B84C;
-          font-size: 46px;
-          padding: 4px;
-          font-family:Bodoni;
-        }
-        #mybutton{
-          background-color:#50A232;
-          font-size:40px;
-          padding:1%;
-          font-family:Bodoni;
-        }
-        #list1{
-          width:40px;
-        }
-        #list3{
-          width:50px;
-        }
-        #txt,#list1,#list2,#list3,#mybutton,#button1,#button2{
-          margin-left:700px;
-        }
       </style>
     <title>
         HOMEPAGE OF MATCH50
     </title>
     </head>
     <body>
-      <H1 id="first">THIS IS MATCH50</H1>
+      <IMG STYLE="position:absolute; TOP:180px; LEFT:55px; WIDTH:580px; HEIGHT:350px" SRC="https://dentistrytoday.com/media/k2/items/cache/c07f134e0f4dfa9628ce03732dcbcd15_XL.jpg">
+      <div id="first">THIS IS MATCH50</div>
        <br>
-       <h2 id="second">
+       <div id="second">
         <div id="third"><span class="blinking">WE HELP YOU MAKE FRIEND WITH SIMILAR PERSONALITY</span> </div>
-         </h2>
-         <div id="create">Create a new account<br><br></div>
+         </div>
+         <div id="create">Create a new account<br></div>
          <input type="text" name="fname" placeholder="First Name" size="20" id="txtbox1">
          <input type="text" name="lname" placeholder="Last Name" size="20" id="txtbox2"><br><br>
          <input type="password" name="password" placeholder="enter password" id="txtbox3"><br><br>
          <input type="text" name="email" placeholder="Email Id" size="20" id="txtbox4">
          <form>
-         <br><br><div id="txt">Birthdate</div><br>
+         <br><div id="txt">Birthday</div>
          <input name="date" list="dates" placeholder="23" id="list1">
          <datalist id="dates">
             <option value="1">
@@ -127,57 +142,59 @@
             <option value="30">
             <option value="31">
           </datalist>
-          <input name="month" list="month" placeholder="September" id="list2">
-          <datalist id="month">
-             <option value="January">
-             <option value="February">
-             <option value="March">
-             <option value="April">
-             <option value="June">
-             <option value="July">
-             <option value="August">
-             <option value="September">
-             <option value="October">
-             <option value="November">
-             <option value="December">
-          </datalist>
-          <input name="year" list="year" placeholder="2000" id="list3">
-          <datalist id="year">
-            <option value="1980">
-            <option value="1981">
-            <option value="1982">
-            <option value="1983">
-            <option value="1984">
-            <option value="1985">
-            <option value="1986">
-            <option value="1987">
-            <option value="1988">
-            <option value="1989">
-             <option value="1990">
-             <option value="1991">
-             <option value="1992">
-             <option value="1993">
-             <option value="1994">
-             <option value="1995">
-             <option value="1996">
-             <option value="1997">
-             <option value="1998">
-             <option value="1999">
-             <option value="2000">
-             <option value="2001">
-             <option value="2002">
-             <option value="2003">
-             <option value="2004">
-             <option value="2005">
-             <option value="2006">
-             <option value="2007">
-             <option value="2008">
-             <option value="2009">
-           </datalist><br><br>
-           <input type="radio" name="Male" value="Male" id="button1">Male
-           <input type="radio" name="Female" value="Female" id="button2">Female
-           <br><br>
+          <select>
+             <option value="January">January</option>
+             <option value="February">February</option>
+             <option value="March">March</option>
+             <option value="April">April</option>
+             <option value="July">July</option>
+             <option value="August">August</option>
+               <option value="June">June</option
+              <option value="September">September</option>
+             <option value="October">October</option>
+             <option value="November">November</option>
+             <option value="December">December</option>
+             </select>
+            <select>
+            <option value="1980">1980</option>
+            <option value="1981">1981</option>
+            <option value="1982">1982</option>
+            <option value="1984">1984
+              <option value="1983">1983</option>
+            <option value="1986">1986</option>
+            <option value="1987">1987</option>
+              <option value="1985">1985</option>
+            <option value="1988">1988</option>
+             <option value="1990">1990</option>
+             <option value="1991">1991</option>
+              <option value="1989">1989</option>
+             <option value="1992">1992</option>
+             <option value="1994">1994</option>
+               <option value="1993">1993</option>
+             <option value="1995">1995</option>
+             <option value="1996">1996</option>
+             <option value="1997">1997</option>
+             <option value="1999">1999</option>
+              <option value="1998">1998</option>
+             <option value="2000">2000</option>
+             <option value="2002">2002</option>
+             <option value="2003">2003</option>
+             <option value="2004">2004</option>
+               <option value="2001">2001</option>
+             <option value="2006">2006</option>
+               <option value="2005">2005</option>
+             <option value="2007">2007</option>
+             <option value="2008">2008</option>
+             <option value="2009">2009</option>
+           </select><br><br>
+           <form>
+             <div id="form">
+             Male:<input type="radio" name="status">
+             Female:<input type="radio" name="status">
+             </div>
+             </form>
+             <br>
           <button id="mybutton"><a href="https://www.youtube.com">Sign Up</a></button>
-</form>
+
     </body>
 </html>
