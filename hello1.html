@@ -1,111 +1,183 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="style.css">
-    <style>
-   h3{
-  text-align: center;
-  color: orange;
-}
-    p{
-      color: pink;  
-    }
-  table{
-    border:2px solid black;
-    border-collapse: collapse;
-    width: 50%;
-  }
-  th,td{
-    border:1px solid black;
-    padding:5px;
-    text-align: center;
-  }
-  th{
-    background-color: lightgray;
-  }
-  #top{
-    font-size: 36px;
-  }
-    #middle{
-      font-size:24px;
-    }
-    #bottom{
-      font-size: 12px;
-    }
-    .name{
-      color: yellow;
-     }
-      
-    h2{
-      text-align: center;
-      color: blue;
-    }
-    div{
-      width: 500px;
-      background-color: teal;
-      margin:30px;
-      padding: 20px;
-      font-size: 40px;
-      font-weight: italic ;
-      font-family:Arial,sans-serif;
-    }
-    </style>
+    <head>
+      <style>
+        section{
+          background-color:blue;
+        }
+        #first{
+          font-size:50px;
+          color:black;
+          background-color:blue;
+          text-align:center;
+        }
+        #second{
+          font-size:35px;
+          color:red;
+          background-color:white;
+          text-align:center;
+        }
+        #first:hover{
+          background-color:#DEECEB;
+        }
+        #first:hover{
+          background-color:blue;
+        }
+        .blinking{
+        animation:blinkingText 2s infinite;
+        }
+        @keyframes blinkingText{
+        0%{     color: #000;    }
+        ​49%{    color: transparent; }
+        ​50%{    color: transparent; }
+        ​99%{    color:transparent;  }
+        ​100%{   color: #000;    }
+        }
+        #fourth{
+          margin:50px;
+          position:absolute; left:100px; top:2px;
+        }
+        #txtbox1,#txtbox3,#txtbox4 {
+          font-size: 16pt;
+          height: 32px;
+          width : 300px;
+          margin-left:700px;
+        }
+
+          #txtbox2{
+            font-size: 18pt;
+            height: 32px;
+            width : 300px;
+            margin-left:10px;
+          }
+        #create{
+          margin-left:700px;
+          font-size:40px;
+        }
+        #mybutton:hover{
+          background-color:#69B84C;
+          font-size: 46px;
+          padding: 4px;
+          font-family:Bodoni;
+        }
+        #mybutton{
+          background-color:#50A232;
+          font-size:40px;
+          padding:1%;
+          font-family:Bodoni;
+        }
+        #list1{
+          width:40px;
+        }
+        #list3{
+          width:50px;
+        }
+        #txt,#list1,#list2,#list3,#mybutton,#button1,#button2{
+          margin-left:700px;
+        }
+      </style>
     <title>
-      My Webpage
+        HOMEPAGE OF MATCH50
     </title>
-  </head>
-  <body>
-    hello world ! yo ,no yo
-    <img src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg" height="400" width="50%">
-    <h1 style="color:red;text-align: center">this is called styling baby</h1>
-    <h2>this is better stylin through css</h2>
-    <h2>yeah css is cooler than html</h2>
-    <h3>the style of this heading is more elegent</h3>
-    <p>here the styling of paragraph is done in a separate css file rather than including it in same file which prevents redunduncy and helps maintainable code</p>
-    <br>hello world ! yo ,no yo<br>
-    <div>
-      this is a divison which we will experiment styling with
-      <br>padding is for spacing inside the div and margin is for spacing the div outside
-    </div>
-    <div id="top">
-    this is not the <span class ="name">top </span>of webpage
-  </div>
-  <div id="middle">
-    this is not the <span class ="name">middle </span>of webpage
-  </div>
-  <div id="bottom">
-  this is not the <span class ="name">bottom</span>of webpage
-  </div>
-    here is the list
-    Unordered list :
-        <ul>
-            <li>this is the first item</li>
-            <li>this is the second item</li>
-            </ul>
-ordered list
-    <ol>
-      <li>this is the first item</li>
-    <li>this is the second item</li>
-    <table>
-      <tr>
-        <th>name</th>
-        <th>id</th>
-        <th>phone</th>
-     </tr>
-     <tr>
-       <td>hetan</td>
-       <td>1</td>
-       <td>1838091230</td>
-     </tr>
-     <tr>
-       <td>nobody</td>
-       <td>2</td>
-       <td>11230</td>
-     </tr>
-   </table>
-   <form>
-     <input type="text" name="name" placeholder="enter something bitch">
-     <button>submit</button>
-   </form>
-  </body>
+    </head>
+    <body>
+      <H1 id="first">THIS IS MATCH50</H1>
+       <br>
+       <h2 id="second">
+        <div id="third"><span class="blinking">WE HELP YOU MAKE FRIEND WITH SIMILAR PERSONALITY</span> </div>
+         </h2>
+         <div id="create">Create a new account<br><br></div>
+         <input type="text" name="fname" placeholder="First Name" size="20" id="txtbox1">
+         <input type="text" name="lname" placeholder="Last Name" size="20" id="txtbox2"><br><br>
+         <input type="password" name="password" placeholder="enter password" id="txtbox3"><br><br>
+         <input type="text" name="email" placeholder="Email Id" size="20" id="txtbox4">
+         <form>
+         <br><br><div id="txt">Birthdate</div><br>
+         <input name="date" list="dates" placeholder="23" id="list1">
+         <datalist id="dates">
+            <option value="1">
+            <option value="2">
+            <option value="3">
+            <option value="4">
+            <option value="5">
+            <option value="6">
+            <option value="7">
+            <option value="8">
+            <option value="9">
+            <option value="10">
+            <option value="11">
+            <option value="12">
+            <option value="13">
+            <option value="14">
+            <option value="15">
+            <option value="16">
+            <option value="17">
+            <option value="18">
+            <option value="19">
+            <option value="20">
+            <option value="21">
+            <option value="22">
+            <option value="23">
+            <option value="24">
+            <option value="25">
+            <option value="26">
+            <option value="27">
+            <option value="28">
+            <option value="29">
+            <option value="30">
+            <option value="31">
+          </datalist>
+          <input name="month" list="month" placeholder="September" id="list2">
+          <datalist id="month">
+             <option value="January">
+             <option value="February">
+             <option value="March">
+             <option value="April">
+             <option value="June">
+             <option value="July">
+             <option value="August">
+             <option value="September">
+             <option value="October">
+             <option value="November">
+             <option value="December">
+          </datalist>
+          <input name="year" list="year" placeholder="2000" id="list3">
+          <datalist id="year">
+            <option value="1980">
+            <option value="1981">
+            <option value="1982">
+            <option value="1983">
+            <option value="1984">
+            <option value="1985">
+            <option value="1986">
+            <option value="1987">
+            <option value="1988">
+            <option value="1989">
+             <option value="1990">
+             <option value="1991">
+             <option value="1992">
+             <option value="1993">
+             <option value="1994">
+             <option value="1995">
+             <option value="1996">
+             <option value="1997">
+             <option value="1998">
+             <option value="1999">
+             <option value="2000">
+             <option value="2001">
+             <option value="2002">
+             <option value="2003">
+             <option value="2004">
+             <option value="2005">
+             <option value="2006">
+             <option value="2007">
+             <option value="2008">
+             <option value="2009">
+           </datalist><br><br>
+           <input type="radio" name="Male" value="Male" id="button1">Male
+           <input type="radio" name="Female" value="Female" id="button2">Female
+           <br><br>
+          <button id="mybutton"><a href="https://www.youtube.com">Sign Up</a></button>
+</form>
+    </body>
 </html>
