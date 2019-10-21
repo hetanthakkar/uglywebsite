@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <style>
-        body{
+       body{
   background-color:#94A090
 }
 section{
@@ -31,11 +30,11 @@ section{
 animation:blinkingText 2s infinite;
 }
 @keyframes blinkingText{
-0%{     color: #000;    }
-​49%{    color: transparent; }
-​50%{    color: transparent; }
-​99%{    color:transparent;  }
-​100%{   color: #000;    }
+0%{color:#000;}
+​49%{color:transparent;}
+​50%{color:transparent;}
+​99%{color:transparent;}
+​100%{color:#000;}
 }
 #fourth{
   margin:50px;
@@ -56,27 +55,27 @@ animation:blinkingText 2s infinite;
 }
   #txtbox2{
     font-size: 18pt;
-    height: 32px;
-    width : 300px;
-    margin-left:10px;
+    height: 40px;
+    width : 260px;
+    margin-left:698px;
+
   }
 #create{
   margin-left:700px;
-  margin-top:18px;
+  margin-top:90px;
   font-size:40px;
 }
-#mybutton:hover{
+#mybutton:hover,#mybutton1:hover{
   color:red;
   background-color:yellow;
   font-size: 46px;
-  padding: 4px;
-  font-family:Bodoni;
 }
 #mybutton{
   background-color:#50A232;
   font-size:30px;
   padding:1%;
   font-family:Arial;
+  border-radius: 8px;
 }
 #list1{
   width:40px;
@@ -88,12 +87,39 @@ animation:blinkingText 2s infinite;
 #txt,#list1,#list2,#list3,#mybutton,#button1,#button2,#form{
   margin-left:700px;
 }
-@media(max-width:499px)
+@media(max-width:959px)
 {
-.notvisible{
-   display:none;
+.blinking{
+   width:100%;
 }
-      </style>
+.match{
+  width:100%;
+}
+}
+#shift{
+  position:relative;
+  top:-50px;
+}
+#txtbox5{
+  position: relative;
+  font-size: 18pt;
+  height: 40px;
+  width : 300px;
+  left:65px;
+  top:0px;
+}
+#mybutton1{
+  background-color:#50A232;
+  position: relative;
+  font-size: 16pt;
+  height: 45px;
+  width : 120px;
+  left:900px;
+  top:54px;
+  border-radius: 8px;
+  font-family:Arial;
+}
+
     <title>
         HOMEPAGE OF MATCH50
     </title>
